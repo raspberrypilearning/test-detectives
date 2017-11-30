@@ -53,4 +53,11 @@ assert repr(card1) == "2 of clubs"
 
 This time you will see an **Assertion error** because the representation of the object you created is not "2 of clubs"
 
-![Not 2 of clubs](images/not-2-clubs.png)
+![Not the 2 of clubs](images/not-two-clubs.png)
+
+You can replace the condition in your assertion with **any statement** that should evaluate to True. For example, you could create another card and then assert that the two cards do not share the same number:
+
+```Python
+card2 = Card("hearts", "K")
+assert card1.number != card2.number
+```
