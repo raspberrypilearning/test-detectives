@@ -35,7 +35,7 @@ from card import Card
 card1 = Card("hearts", "2")
 ```
 
-The `__repr__` method returns a string of the form `self._number + " of " + self._suit`. So if it is working correctly, we can expect "2 of hearts".
+The `repr` method returns a string of the form `self._number + " of " + self._suit`. So if it is working correctly, we can expect "2 of hearts".
 
 + Add an assertion to your code
 
