@@ -1,6 +1,12 @@
 ## Challenge: bug detective 1
 
-Here is some code which contains 2 bugs. Use **assert** to create a testing file which finds the bugs.
+Here is some code which contains 2 bugs.
+
++ Copy the code and save it with the filenames given, in the same folder.  
+
++ Add two **assert** statements to the `bugged_card_test.py` file which should pass, but don't.
+
++ Fix the two bugs!
 
 ### bugged_card.py
 ```python
