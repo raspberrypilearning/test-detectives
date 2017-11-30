@@ -4,7 +4,7 @@ How many times have you written some Python code and discovered that it doesn't 
 
 The following techniques are really useful for testing programs:
 
-- Asserting something is true, and raising an error if it is not
+- Asserting a condition is true, and raising an error if it is not
 - Logging the state of your program as it progresses
 - Stepping through a program
 
