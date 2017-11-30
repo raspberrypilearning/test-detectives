@@ -31,7 +31,7 @@ from card import Card
 
 + Create a valid card - for this test it will be the 2 of hearts
 
-```Python
+```python
 card1 = Card("hearts", "2")
 ```
 
@@ -39,7 +39,7 @@ The `__repr__` method returns a string of the form `self._number + " of " + self
 
 + Add an assertion to your code
 
-```Python
+```python
 assert repr(card1) == "2 of hearts"
 ```
 
@@ -47,7 +47,7 @@ assert repr(card1) == "2 of hearts"
 
 + Change the code so that you are asserting the representation is something different:
 
-```Python
+```python
 assert repr(card1) == "2 of clubs"
 ```
 
