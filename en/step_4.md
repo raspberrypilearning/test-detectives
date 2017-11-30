@@ -51,6 +51,6 @@ assert repr(card1) == "2 of hearts"
 assert repr(card1) == "2 of clubs"
 ```
 
-This time you will see an Assertion error because the representation of the object you created is not "2 of clubs"
+This time you will see an **Assertion error** because the representation of the object you created is not "2 of clubs"
 
 ![Not 2 of clubs](images/not-2-clubs.png)
