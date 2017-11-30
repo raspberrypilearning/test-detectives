@@ -4,7 +4,7 @@ According to the Cambridge Dictionary, the word **assert** means _"to say that s
 
 Let's look at some of the code from the [deck of cards](https://projects.raspberrypi.org/en/projects/deck-of-cards){:target="_blank"} project. If you do not have this code you can use the [starter code](resources/card.py) instead, but it would be useful to complete the Deck of cards project first so that you understand what the code does.
 
-The `Card` class has an `__init__` method and a `__repr__` method.
+The `Card` class has an `init` method and a `repr` method.
 
 ```python
 class Card:
