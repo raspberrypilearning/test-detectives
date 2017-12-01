@@ -37,13 +37,13 @@ card1 = Card("hearts", "2")
 
 The `repr` method returns a string of the form `self._number + " of " + self._suit`. So if it is working correctly, we can expect "2 of hearts".
 
-+ Add an assertion to your code
++ Add an assertion to your code to state that you think the representation should be equal to "2 of hearts"
 
 ```python
 assert repr(card1) == "2 of hearts"
 ```
 
-+ Save and run your test file. There should be no output at all because this assertion is True - the representation of the card object should be the 2 of hearts.
++ Save and run your test file. There should be no output at all because this assertion is `True` - the representation of the card object should be the 2 of hearts.
 
 + Change the code so that you are asserting the representation is something different:
 
@@ -51,7 +51,7 @@ assert repr(card1) == "2 of hearts"
 assert repr(card1) == "2 of clubs"
 ```
 
-This time you will see an **Assertion error** because the representation of the object you created is not "2 of clubs"
+This time you will see an **AssertionError** because the representation of the object you created is not "2 of clubs"
 
 ![Not the 2 of clubs](images/not-two-clubs.png)
 
@@ -61,3 +61,11 @@ You can replace the condition in your assertion with **any statement** that shou
 card2 = Card("hearts", "K")
 assert card1.number != card2.number
 ```
+
+--- collapse ---
+---
+title: What is the point of assertions?
+---
+If you maintain a test file of assertions which should be `True`, whenever you update the code in your class you can run the test file and see if your changes break any of the assertions. If an `AssertionError` is raised, you know that you have introduced a bug and you know where to fix it.
+
+--- /collapse ---
