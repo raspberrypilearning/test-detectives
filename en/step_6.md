@@ -6,7 +6,7 @@ Here is some code which contains 2 bugs.
 
 + Add two **assert** statements to the `bugged_card_test.py` file which should pass, but don't.
 
-+ Fix the two bugs!
++ Find and fix the two bugs!
 
 ### bugged_card.py
 ```python
