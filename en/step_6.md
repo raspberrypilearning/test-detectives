@@ -68,3 +68,40 @@ card2.number = "2"
 # ASSERT 2 - card1 and card2 should now have the same number
 
 ```
+
+--- hints ---
+--- hint ---
+The first assert statement should be:
+
+```Python
+assert card1.suit == "spades"
+```
+
+This statement should be True, but will fail. This is because there is a mistake in the `suit` setter method - `"Spades"` has a capital letter, so the input of `"spades"` is seen as invalid, when it should not be.
+
+```Python
+if suit in ["hearts", "clubs", "diamonds", "Spades"]:
+```
+
+Fix it by replacing the capital `"S"`in `"Spades"` with a lowercase `"s"`.
+
+--- /hint ---
+--- hint ---
+The second assert statement should be:
+
+```python
+assert card1.number == card2.number
+```
+
+This statement will also fail, even though `card1`'s number was set as 2 and you just changed `card2`'s number to 2 as well. This is because there is a mistake in the `number` setter method - the value of `self._number` is assigned as itself, rather than `number` which is the new number you specified.
+
+```Python
+def number(self, number):
+        if number in [str(n) for n in range(2,11)] + ["J", "Q", "K", "A"]:
+            self._number = self._number
+```
+
+Fix it by setting `self._number = number` instead.
+
+--- /hint ---
+--- /hints ---
