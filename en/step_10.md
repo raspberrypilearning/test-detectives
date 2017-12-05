@@ -38,4 +38,4 @@ Instead of this, you could use IDLE's built in debug tools to step through the p
 
 Here is a step through of the first run of the loop:
 
-![Step through program](images/step-through-program.png)
+![Step through program](images/step-through-program.gif)
