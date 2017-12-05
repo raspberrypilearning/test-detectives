@@ -93,7 +93,7 @@ The second assert statement should be:
 assert card1.number == card2.number
 ```
 
-This statement will also fail, even though `card1`'s number was set as 2 and you just changed `card2`'s number to 2 as well. This is because there is a mistake in the `number` setter method - the value of `self._number` is assigned as itself, rather than `number` which is the new number you specified.
+This statement will also fail, even though `card1`'s number was originally set as 2 and you just changed `card2`'s number to 2 as well. This is because there is a mistake in the `number` setter method - the value of `self._number` is assigned as itself, rather than `number` which is the new number you specified.
 
 ```Python
 def number(self, number):

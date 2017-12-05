@@ -29,29 +29,3 @@ class Card:
             self._number = number
         else:
             print("That's not a valid number")
-
-
-class Deck:
-
-    def __init__(self):
-        self._cards = []
-        self.populate()
-        #print(self._cards)
-
-
-    def populate(self):
-        suits = ["hearts", "clubs", "diamonds", "spades"]
-        numbers = [str(n) for n in range(2,11)] + ["J", "Q", "K", "A"]
-        self._cards = [ Card(s, n) for s in suits for n in numbers ]
-
-    def populate2(self):
-        suits = ["hearts", "clubs", "diamonds", "spades"]
-        numbers = [str(n) for n in range(2,11)] + ["J", "Q", "K", "A"]
-        cards = []
-        for suit in suits:
-            for number in numbers:
-                cards.append(Card(suit, number))
-        self._cards = cards
-
-
-deck = Deck()
