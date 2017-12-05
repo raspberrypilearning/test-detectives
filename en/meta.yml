@@ -16,6 +16,7 @@ steps:
   - title: Detective skills
   - title: Assert
   - title: When to assert
-  - title: "Challenge: bug detective 1"
+  - title: "Challenge: bug detective"
   - title: Logging
   - title: To log or not to log
+  - title: "Challenge: log detective"

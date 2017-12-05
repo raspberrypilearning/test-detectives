@@ -17,3 +17,5 @@ logger.setLevel(level=logging.CRITICAL)
 ```
 
 + Run the `log_test.py` program again. You will no longer see any log messages because you have asked to only see the most important (critical) messages. Since you didn't add any `logger.critical()` messages to your program, there is nothing to show.
+
++ Change your logging level back to `DEBUG`.

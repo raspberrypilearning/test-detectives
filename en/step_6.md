@@ -1,4 +1,4 @@
-## Challenge: bug detective 1
+## Challenge: bug detective
 
 Here is some code which contains 2 bugs.
 
