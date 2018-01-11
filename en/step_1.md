@@ -1,10 +1,10 @@
 ## Introduction
 
-Learn how to test your code and detect bugs by becoming a test detective
+Learn how to test your code and detect bugs by becoming a test detective.
 
 ### What you will make
 
-[Put something here]
+You will develop techniques and a set of tests which you can use to prove your code works and debug problems when they happen.
 
 ### What you will learn
 
