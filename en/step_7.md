@@ -36,7 +36,7 @@ logger.setLevel(level=logging.DEBUG)
 logger.debug("Invalid suit - " + str(suit) )
 ```
 
-Now let's test what this looks like when you run the program and set an invalid suit.
+Next let's test what this looks like when you run the program and set an invalid suit:
 
 + Create a new file and save it as `log_test.py`, in the same folder as your `card.py` code.
 
