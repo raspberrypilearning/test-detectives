@@ -6,7 +6,7 @@ Logging is useful because you can change the level of detail for messages you wi
 
 _Information from [Python Logging How To](https://docs.python.org/3.6/howto/logging.html#logging-advanced-tutorial){:target="_blank"}_
 
-Instead of using `logger.debug()`, you can log messages at different levels, for example `logger.info()`, `logger.warning()`, `logger.error()`, or `logger.critical()`.
+Instead of using `logger.debug()`, you can log messages at different levels: `logger.info()`, `logger.warning()`, `logger.error()`, or `logger.critical()`.
 
 When you are debugging your program, you will want to set the level of the logger to `DEBUG` to get the most information. However, once your program is finished, you probably don't want to see so much information.
 
