@@ -1,12 +1,12 @@
 ## Challenge: bug detective
 
-Here is some code which contains 2 bugs.
+Here is some code containing two bugs.
 
-+ Copy the code and save it with the filenames given, in the same folder.  
++ Copy and saeve the two sections of code separately, with the file names given and in the same folder.  
 
-+ Add two **assert** statements to the `bugged_card_test.py` file which should pass, but don't.
++ Add two `assert` statements to the `bugged_card_test.py` file which should pass, but don't, because of the two bugs.
 
-+ Find and fix the two bugs!
++ Find and fix the bugs!
 
 ### bugged_card.py
 ```python
@@ -71,29 +71,29 @@ card2.number = "2"
 
 --- hints ---
 --- hint ---
-The first assert statement should be:
+The first `assert` statement should be:
 
 ```Python
 assert card1.suit == "spades"
 ```
 
-This statement should be True, but will fail. This is because there is a mistake in the `suit` setter method - `"Spades"` has a capital letter, so the input of `"spades"` is seen as invalid, when it should not be.
+This statement should be true, but will fail. This is because there is a mistake in the `suit` setter method: `"Spades"` has a capital letter, so the input of `"spades"` is seen as invalid when it should not be.
 
 ```Python
 if suit in ["hearts", "clubs", "diamonds", "Spades"]:
 ```
 
-Fix it by replacing the capital `"S"`in `"Spades"` with a lowercase `"s"`.
+Fix it by replacing the capital `"S"`in `"Spades"` with a lower-case `"s"`.
 
 --- /hint ---
 --- hint ---
-The second assert statement should be:
+The second `assert` statement should be:
 
 ```python
 assert card1.number == card2.number
 ```
 
-This statement will also fail, even though `card1`'s number was originally set as 2 and you just changed `card2`'s number to 2 as well. This is because there is a mistake in the `number` setter method - the value of `self._number` is assigned as itself, rather than `number` which is the new number you specified.
+This statement will also fail, even though `card1`'s number was originally set as `2` and you just changed the number of `card2` to `2` as well. This is because there is a mistake in the `number` setter method: the value assigned to `self._number` is itself rather than `number`, which is the new number you specified.
 
 ```Python
 def number(self, number):
