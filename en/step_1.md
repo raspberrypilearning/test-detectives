@@ -4,7 +4,7 @@ Learn how to test your code and detect bugs by becoming a test detective.
 
 ### What you will make
 
-You will develop techniques and a set of tests which you can use to prove your code works and debug problems when they happen.
+You will develop a set of techniques and tests that you can use to prove your code works and to debug problems when they happen.
 
 ### What you will learn
 
