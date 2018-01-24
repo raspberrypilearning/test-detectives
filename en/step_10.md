@@ -34,8 +34,8 @@ Instead, you could use IDLE's built-in debug tools to step through the program l
 
 + Using IDLE, create a new file and paste in the code from above.
 
-+ Run the code by pressing <kbd>F5</kbd>. The debugger will take over, and you can now press **Step** to step through the program one line at a time. You will see the line you are on in the box at the top, and the value of any variables at this point in time in the information box at the bottom.
++ Run the code by pressing <kbd>F5</kbd>. The debugger will take over, and you can now press **Step** to step through the program one line at a time. You will see the current line in the box at the top, and the value of any variables at this point in the program in the information box at the bottom.
 
-Here is a run-through of the first run of the loop:
+Here is the first run of the loop:
 
 ![Step through program](images/step-through-program.gif)
