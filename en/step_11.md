@@ -43,7 +43,7 @@ counter = 0
 
 --- /hint ---
 --- hint ---
-If you fix this bug, you will see that the first percentage calculated is `24%`, which is correct. However, keep stepping and you will see that `24` is repeatedly added to the percentages list. You may also notice that there is no output from the program in the shell.
+If you fix the first bug, you will see that the first percentage calculated is `24%`, which is correct. However, keep stepping and you will see that `24` is repeatedly added to the `percentages` list. You may also notice that there is no output from the program in the shell.
 
 ![24 is repeatedly added](images/lots-of-24.png)
 
