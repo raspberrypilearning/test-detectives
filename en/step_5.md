@@ -12,7 +12,7 @@ assert name == "Laura"
 Here are some good ways to use `assert` to test your program:
 
 - `item in list` — assert that a particular item is in a list
-- `type(var) is IntType` — assert that a particular variable is an integer (or a different data type)
+- `type(var) is IntType` — assert that a particular variable is an integer
 - Checking "can't happen" situations — e.g. assert that there are no duplicates in a list
-- After calling a function — assert that the return value from a function is reasonable
+- After calling a function — assert that the return value of a function is reasonable
 - `isinstance(class)` — assert that an object is an instance of a particular class
