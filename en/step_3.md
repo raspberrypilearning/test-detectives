@@ -1,6 +1,6 @@
 ## Detective skills
 
-How many times have you written some Python code and then discovered it doesn't work properly and you're not sure why? It would be really helpful to have some new detective skills in your toolbox to help you test your code and find bugs more easily.
+How many times have you written some Python code, only to discover it doesn't work properly and you're not sure why? It would be really helpful to have some new detective skills in your toolbox to help you test your code and find bugs more easily!
 
 The following techniques are really useful for testing programs:
 
