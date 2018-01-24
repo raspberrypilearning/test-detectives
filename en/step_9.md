@@ -4,7 +4,7 @@
 
 + Add a logger to the `deck` file, setting its level to `DEBUG`.
 
-+ Add a log `info()` statement which logs when the deck has been created.
++ Add a log `info()` statement to record whenever a deck object has been created.
 
 + Inside your `log_test.py` file, import the `Deck` class:
 
@@ -12,12 +12,12 @@
 from deck import Deck
 ```
 
-+ Then, create a deck:
++ Then, create a deck object:
 
 ```python
 deck = Deck()
 ```
 
-+ Run the program and test whether you see information that the deck was created as well as the debug statement about you trying to assign an invalid suit.
++ Run the program. Now you should see information that the deck was created, in addition to the debug statement about trying to assign an invalid suit.
 
 ![Info log](images/info-log.png)
