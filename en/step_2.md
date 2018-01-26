@@ -9,3 +9,5 @@
 + Python 3 with IDLE
 
 This is already pre-installed on Raspbian. If you're not using a Raspberry Pi, find installation instructions below.
+
+[[[generic-python-install-python3]]]
