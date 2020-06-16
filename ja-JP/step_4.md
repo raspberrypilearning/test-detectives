@@ -66,6 +66,7 @@ assert card1.number != card2.number
 ---
 title: What is the point of assertions?
 ---
+
 Whenever you update a working program, there is a chance that you may introduce an error. If you maintain a test file of assertions which should be `True` for the program, then you can run the test file whenever you update the program to see if your changes break any of the assertions. If an `AssertionError` occurs, you know that you have introduced a bug, and you know where to fix it.
 
 --- /collapse ---
