@@ -9,6 +9,7 @@ Here is some code containing two bugs.
 + Find and fix the bugs!
 
 ### bugged_card.py
+
 ```python
 class Card:
 
@@ -69,7 +70,9 @@ card2.number = "2"
 
 ```
 
---- hints --- --- hint --- The first `assert` statement should be:
+--- hints --- --- hint ---
+
+The first `assert` statement should be:
 
 ```Python
 assert card1.suit == "spades"
@@ -83,7 +86,9 @@ if suit in ["hearts", "clubs", "diamonds", "Spades"]:
 
 Fix it by replacing the capital `"S"`in `"Spades"` with a lower-case `"s"`.
 
---- /hint --- --- hint --- The second `assert` statement should be:
+--- /hint --- --- hint ---
+
+The second `assert` statement should be:
 
 ```python
 assert card1.number == card2.number
