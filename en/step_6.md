@@ -9,6 +9,7 @@ Here is some code containing two bugs.
 + Find and fix the bugs!
 
 ### bugged_card.py
+
 ```python
 class Card:
 
@@ -71,6 +72,7 @@ card2.number = "2"
 
 --- hints ---
 --- hint ---
+
 The first `assert` statement should be:
 
 ```Python
@@ -87,6 +89,7 @@ Fix it by replacing the capital `"S"`in `"Spades"` with a lower-case `"s"`.
 
 --- /hint ---
 --- hint ---
+
 The second `assert` statement should be:
 
 ```python

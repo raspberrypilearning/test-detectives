@@ -19,8 +19,6 @@ while i < 5:
     percentages.append( percent )
 
 print(percentages)
-
-
 ```
 
 + Use the built-in debugger to step through the program and find out where it goes wrong.
@@ -29,6 +27,7 @@ print(percentages)
 
 --- hints ---
 --- hint ---
+
 The first time you run the debugger, you will notice that the value of the variable `i` begins as `1`, meaning that the first percentage worked out is `10%`.
 
 ![i begins at 1](images/i-begins.png)
@@ -43,6 +42,7 @@ counter = 0
 
 --- /hint ---
 --- hint ---
+
 If you fix the first bug, you will see that the first percentage calculated is `24%`, which is correct. However, keep stepping and you will see that `24` is repeatedly added to the `percentages` list. You may also notice that there is no output from the program in the shell.
 
 ![24 is repeatedly added](images/lots-of-24.png)
