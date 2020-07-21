@@ -1,6 +1,6 @@
-## Challenge: step detective
+## चुनौती: स्टेप जासूस
 
-+ Save a copy of this program which contains some bugs:
++ इस प्रोग्राम की एक प्रति सहेजें(सेव(save) करें) जिसमे कुछ बग्स हैं:
 
 ### test_scores.py
 
@@ -21,19 +21,19 @@ while i < 5:
 print(percentages)
 ```
 
-+ Use the built-in debugger to step through the program and find out where it goes wrong.
++ प्रोग्राम को परखने के लिए अंतर्निहित डीबगर(debugger) का उपयोग करें और पता करें कि यह कहां गलत हुआ है।
 
-+ Fix any bugs you find.
++ कोई भी बग(bug) जो आपको मिले उन्हे ठीक करें।
 
 --- hints --- --- hint ---
 
-The first time you run the debugger, you will notice that the value of the variable `i` begins as `1`, meaning that the first percentage worked out is `10%`.
+पहली बार जब आप डिबगर(debugger) Run(रन) करेंगे, तो आप देखेंगे की वेरिएबल `i` का मूल्य `1` के रूप में शुरू होता है, इसका मतलब है की पहला प्रतिशत जो काम किया है वो है `10%`।
 
 ![i begins at 1](images/i-begins.png)
 
-This seems odd — `12/50` is not `10%` of the marks. However, if we examine the next element in the `scores` list, we can see that the next mark is `5/50`, which is `10%`.
+यह अजीब है — `12/50` ये अंक के `10%` नहीं हैं। हालांकि, अगर हम `scores` सूची के अगले तत्व की जांच करते हैं, तो हम देख सकते हैं की अगले अंक हैं `5/50`, जो जी `10%` हैं।
 
-Fix this bug by beginning the counter at `0` rather than `1`, since the list is indexed from `0`.
+क्योंकि यह सूची `0` से अनुक्रमित है, काउंटर(counter) को `1` की बजाय `0` पर शुरू करके इस बात(bug) को ठीक करें।
 
 ```python
 counter = 0
@@ -41,13 +41,13 @@ counter = 0
 
 --- /hint --- --- hint ---
 
-If you fix the first bug, you will see that the first percentage calculated is `24%`, which is correct. However, keep stepping and you will see that `24` is repeatedly added to the `percentages` list. You may also notice that there is no output from the program in the shell.
+अगर आप पहला बाग ठीक करेंगे, तो आप देख सकते हैं की पहले प्रतिशत की गणना `24%` की गयी है, जो की सही है। लेकिन, आगे बढ़ते रहें और आप देख सकते हैं की `percentages` सूची को `24` बार-बार जोड़ा जा रहा है। आप यह भी देख सकते हैं कि शेल के प्रोग्राम से कोई आउटपुट नहीं है।
 
 ![24 is repeatedly added](images/lots-of-24.png)
 
-This is because the loop is infinite — we never change the value of `i` inside the loop, so it keeps evaluating the percentage for the first element in the `scores` list.
+ऐसा इसलिए है क्योंकि लूप अनंत है - हम लूप के अंदर कभी भी `i` का मूल्य नहीं बदलते हैं, इसलिए यह `scores` सूची में पहले तत्व के प्रतिशत का मूल्यांकन करता रहता है।
 
-Fix this by adding `1` to `i` inside the loop:
+इसे ठीक करने के लिए लूप के अंदर `1` को `i` में जोड़ें:
 
 ```python
 i += 1
