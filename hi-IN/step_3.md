@@ -1,11 +1,11 @@
-## Detective skills
+## जासूसी कौशल
 
-How many times have you written some Python code, only to discover it doesn't work properly and you're not sure why? It would be really helpful to have some new detective skills in your toolbox to help you test your code and find bugs more easily!
+आपने कितनी बार कुछ Python(पाइथन) कोड(code) लिखा है, और उसके बाद यह पता कि यह ठीक से काम नहीं करता है और आपको पता भी नहीं है कि क्यों? आपके कोड की जाँच करने के लिए और आसानी से बग्स ढूंढने के लिए आपके टूलबॉक्स(toolbox) में कुछ नये जासूसी कौशल होना बहुत मददगार रगेगा!
 
-The following techniques are really useful for testing programs:
+निम्नलिखित तकनीकें प्रोग्राम की जाँच करने के लिए सचमुच उपयोगी हैं:
 
-- Asserting a condition is true, and raising an error if it is not
-- Logging the state of your program as it progresses
-- Stepping through a program
+- दावे के साथ देखें यदि कोई शर्त सही है या नहीं, अगर न हो तो दोष उठाएँ
+- जैसे आपका प्रोग्राम की प्रगति होती है उसकी स्थिति को लॉग(log) करना
+- प्रोग्राम से चलना
 
-You can do all of these things without having to install any special software, you just need Python 3 and the IDLE editor. And you will be able to use the same techniques to test programs in other languages as well.
+आप यह सभी चीज़ें बिना कोई विशेष सॉफ्टवेयर इंस्टॉल(install) किए बिना कर सकते हैं, आपको बस Python 3 और IDLE एडिटर(editor) की ज़रूरत है। और आप अन्य भाषाओं में प्रोग्राम की जाँच करने के लिए उसी तरह की तकनीकों का उपयोग कर पाएंगे।
