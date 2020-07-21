@@ -1,7 +1,7 @@
 ---
-title: Test detectives
+title: परीक्षण जासूस
 hero_image: images/banner.png
-description: Learn how to test your code and detect bugs
+description: अपने कोड(code) की जाँच करना और बग्स(bugs) का पता लगाना सीखें
 theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 2
 listed: true
@@ -17,24 +17,24 @@ version: 4
 last_tested: 2017-01-01
 steps:
   - 
-    title: Introduction
+    title: परिचय
   - 
-    title: What you will need
+    title: आपको किन चीज़ों की आवश्यकता होगी
   - 
-    title: Detective skills
+    title: जासूसी कौशल
   - 
-    title: Assert
+    title: दावे के साथ कहना
   - 
-    title: When to assert
+    title: दावे के साथ कब कहना है
   - 
-    title: "Challenge: bug detective"
+    title: "चुनौती: बग(bug) जासूस"
   - 
-    title: Logging
+    title: लॉगिंग(logging)
   - 
-    title: To log or not to log
+    title: लॉग करना है या नहीं करना है
   - 
-    title: "Challenge: log detective"
+    title: "चुनौती: लॉग(log) जासूस"
   - 
-    title: Stepping
+    title: स्टेपिंग
   - 
-    title: "Challenge: step detective"
+    title: "चुनौती: स्टेप(step) जासूस"
