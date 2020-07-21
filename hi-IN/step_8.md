@@ -1,21 +1,21 @@
-## To log or not to log
+## लॉग(log) करना है या नहीं करना है
 
-One useful aspect of logging is that you can change the level of detail of the logged messages. These are the possible levels, going from most detail to least:
+लॉगिंग का एक उपयोगी पहलू यह है कि आप लॉग किए गए संदेशों के विस्तार का स्तर बदल सकते हैं। ये संभव स्तर हैं, जो सबसे अधिक विस्तार से लेकर कम से कम हैं:
 
 ![Level table](images/level-table.png)
 
-_Information from [Python Logging How-To](https://docs.python.org/3.6/howto/logging.html#logging-advanced-tutorial){:target="_blank"}_
+_[Python Logging How-To](https://docs.python.org/3.6/howto/logging.html#logging-advanced-tutorial){:target="_blank"} से जानकारी_
 
-So instead of using `logger.debug()`, you can log messages with other detail levels: `logger.info()`, `logger.warning()`, `logger.error()`, or `logger.critical()`.
+`logger.debug()` का उपयोग करने की बजाय, आप अन्य विवरण स्तरों के साथ संदेश लॉग कर सकते हैं: `logger.info()`, `logger.warning()`, `logger.error()`, या `logger.critical()`।
 
-To get the most information while you're debugging your program, you'll want to set the level of the logger to `DEBUG`. However, once your program is finished and working, you probably don't want to see so much information anymore. Let's look at an example.
+अपने प्रोग्राम को डीबग करते समय सबसे अधिक जानकारी प्राप्त करने के लिए, आप लोगर का स्तर `DEBUG` पर सेट करना चाहेंगे। हालांकि, एक बार जब आपका प्रोग्राम समाप्त हुआ है और काम कर रहा है, तो आप शायद अब इतनी जानकारी नहीं देखना चाहते हैं। आइए एक उदाहरण देखें।
 
-+ In `card.py`, change the level of the logger to `CRITICAL`:
++ `card.py` में लोगर का स्तर `CRITICAL` को बदलें:
 
 ```python
 logger.setLevel(level=logging.CRITICAL)
 ```
 
-+ Run the `log_test.py` program again. You will no longer see any log messages, because you have asked to only see the most important (critical) messages. Since you didn't add any `logger.critical()` messages to your program, it won't show anything.
++ फिर से ` log_test.py ` कार्यक्रम को Run(रन) करें। अब आप कोई लॉग संदेश नहीं देखेंगे, क्योंकि आपने केवल सबसे महत्वपूर्ण (आलोचनावादी) संदेश देखने के लिए कहा है। चूँकि आपने कोई `logger.critical()` संदेश आपके प्रोग्राम में नहीं जोड़े थे, इसलिए यह कुछ भी नहीं दिखाएगा।
 
-+ Change your logging level back to `DEBUG`.
++ अपने लॉगिंग स्तर को वापस `DEBUG` में बदलें ।
