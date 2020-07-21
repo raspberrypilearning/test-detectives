@@ -1,10 +1,10 @@
-## Assert
+## दावे के साथ कहना
 
-According to the dictionary, the word **assert** means _"to say that something is certainly true"_. This meaning holds true in a programming context: you can test your code by asserting that a condition is true, and if it is not true, raise an error. In Python, you can do this using the built-in command `assert`.
+शब्दकोश के अनुसार, **assert** का मतलब है _"to say that something is certainly true"_। यह अर्थ एक प्रोग्रामिंग संदर्भ में सही है: आप अपने कोड की जाँच यह दावा करके कह सकते हैं कि एक शर्त सही है, और यदि यह सही नहीं है, तो एक दोष लिख लें। Python(पाइथन) में, आप इसे एक अंतर्निहित कमांड `assert` का उपयोग करके कर सकते है।
 
-Let's look at some of the code from the [_Deck of cards_](https://projects.raspberrypi.org/en/projects/deck-of-cards){:target="_blank"} project. If you do not have this code, you can use the [`card.py` starter code](resources/card.py) instead, but it would be best if you completed the Deck of cards project first so that you understand what the code does.
+आइये [_Deck of cards_](https://projects.raspberrypi.org/en/projects/deck-of-cards){:target="_blank"} प्रोजेक्ट(project) में से कुछ कोड को देखते हैं। अगर आपके पास यह कोड नहीं है, आप इसकी बजाय [`card.py` starter code](resources/card.py) का उपयोग कर सकते हैं, लेकिन यह सबसे अच्छा होगा की यदि आपने Deck of cards(डेक ऑफ काडॆ) प्रोजेक्ट पहले खत्म किया है ताकि आप समझते हैं की कोड क्या करता है।
 
-The `Card` class has an `init` method and a `repr` method:
+`Card` क्लास में एक `init` मेथड और एक `repr` है:
 
 ```python
 class Card:
@@ -17,45 +17,45 @@ class Card:
         return self._number + " of " + self._suit
 ```
 
-+ Create a new Python file and save it as `assert_test.py`. Make sure you save this file in the same directory as the `card.py` file from the _Deck of cards_ project.
++ एक नयी Python फ़ाइल तयार करें और उसे `assert_test.py` के नाम से सहेजें। सुनिश्चित करें की आप इस फ़ाइल को उसी डाइरैक्टरि (directory) में सहेजते हैं जहां _Deck of cards_ प्रोजेक्ट की `card.py` फ़ाइल है।
 
 [[[rpi-gui-idle-opening]]]
 
-Let's test whether, when we create a valid `Card` object, the representation method (`repr`) of that object works correctly.
+आइये परीक्षण करते हैं की जब हम एक जायज़ `Card` ऑब्जेक्ट(object) तयार करते हैं, क्या उस ऑब्जेक्ट का रेप्रेसेंटेशन (representation) मेथड (`repr`) सही काम करता है।
 
-+ In `assert_test.py`, add the following code to allow you to access the `Card` class:
++ `assert_test.py` में, आपको `Card` क्लास के प्रवेश की अनुमति मिलने के लिए निम्न कोड जोड़ें।
 
 ```python
 from card import Card
 ```
 
-+ Create a valid card — for this test it will be the 2 of hearts:
++ एक जायज़ कार्ड तयार करें — इसकी जाँच करने के लिए यह पान की 2 (दुक्की) होगी:
 
 ```python
 card1 = Card("hearts", "2")
 ```
 
-The `repr` method returns a string of the form `self._number + " of " + self._suit`, so we expect it to return `"2 of hearts"` if it is working correctly.
+`self._number + " of " + self._suit` के रूप में `repr` मेथड(method) एक स्ट्रिंग(string) देता है, इसलिए अगर याग ठीक से काम कर रहा है तो हम ये उम्मीद करते हैं की वह `"2 of hearts"` दे।
 
-+ Add an assertion to your code to state that you think `repr` for your `card1` object should be equal to `"2 of hearts"`:
++ अपने कोड को एक दावा जोड़ें जो बताएगा की आपको लगता है आपके `card1` का `repr` ऑब्जेक्ट(object) `"2 of hearts"` के बराबर होना चाहिए:
 
 ```python
 assert repr(card1) == "2 of hearts"
 ```
 
-+ Save and run your test file. There should be no output at all, because this assertion is `True` — the representation of the card object will be `"2 of hearts"`, because that's the suit and number you used to create the object.
++ आपकी परीक्षण फ़ाइल को सहेजें और Run(रन) करें। क्योंकि यह दावा `True` है, कोई आउटपुट(output) नहीं होना चाहिए — कार्ड ऑब्जेक्ट का प्रतिनिधित्व `"2 of hearts"` होना चाहिए, क्योंकि वही सूट(suit) और संख्या आपने ऑब्जेक्ट बनाने के लिए उपयोग की थी।
 
-+ Change the code so that you are asserting the representation is something different:
++ कोड को बदल दें ताकि आपके प्रतिनिधित्व का दावा कुछ अलग है:
 
 ```python
 assert repr(card1) == "2 of clubs"
 ```
 
-This time you will see an **AssertionError**, because the representation of the `card1` object is not `"2 of clubs"`.
+इस बार आपको एक **AssertionError** दिखाई देगा, क्योंकि `card` ऑब्जेक्ट का प्रतिनिधित्व `"2 of clubs"` (चिड़ी की दुक्की) नहीं है।
 
 ![Not the 2 of clubs](images/not-two-clubs.png)
 
-You can replace the condition in your assertion with **any statement** that should evaluate as True. For example, you could create another card and then assert that the two cards do not share the same number:
+आप अपने दावे में शर्त को **any statement** जिसका सच के रूप में मूल्यांकन हो उससे बदल सकते हैं। उदाहरण के लिए, आप दूसरा कार्ड बना सकते हैं और फिर दावा कर सकते हैं कि दोनों कार्ड एक ही संख्या साझा नहीं करते हैं:
 
 ```Python
 card2 = Card("hearts", "K")
@@ -64,9 +64,9 @@ assert card1.number != card2.number
 
 --- collapse ---
 ---
-title: What is the point of assertions?
+शीर्षक: दावों का क्या मतलब है?
 ---
 
-Whenever you update a working program, there is a chance that you may introduce an error. If you maintain a test file of assertions which should be `True` for the program, then you can run the test file whenever you update the program to see if your changes break any of the assertions. If an `AssertionError` occurs, you know that you have introduced a bug, and you know where to fix it.
+जब भी आप एक कार्यशील प्रोग्राम को अपडेट करते हैं, तो संभावना है कि आप एक त्रुटि को दाखिल करते हैं। यदि आप दावे की परीक्षण फ़ाइल बनाए रखते हैं जो प्रोग्राम के लिए `True` है, तब जब भी आप प्रोग्राम को अपडेट(update) करते हैं यह देखने के लिए कि क्या आपके परिवर्तन किसी भी दावे को तोड़ते हैं तो आप परीक्षण फ़ाइल को Run कर सकते हैं। अगर एक `AssertionError` होता है, तब आपको पता होता है की आपने एक बग दाखिल किया है, और आपको पता है उसे कहां ठीक करना है।
 
 --- /collapse ---
