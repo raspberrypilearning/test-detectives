@@ -1,13 +1,13 @@
-## What you will need
+## आपको किन चीज़ों की आवश्यकता होगी
 
-### Hardware
+### हार्डवेयर(hardware)
 
-+ Any computer that can run Python 3
++ कोई भी कंप्यूटर जो Python 3 Run(रन) कर सकता है
 
-### Software
+### सॉफ्टवेयर(software)
 
-+ Python 3 with IDLE
++ IDLE के साथ Python 3
 
-This is already pre-installed on Raspbian. If you're not using a Raspberry Pi, find installation instructions below.
+यह Raspbian(रास्पबीअन) पर पहले से ही स्थापित है अगर आप Raspberry Pi(रास्पबेरी पाई) का उपयोग नहीं कर रहे हैं, तो नीचे दिये गए इंस्टॉलेशन(installation) निर्देश देखें।
 
 [[[generic-python-install-python3]]]
