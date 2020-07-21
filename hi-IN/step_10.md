@@ -1,8 +1,8 @@
-## Stepping
+## स्टेपिंग(stepping)
 
-When you are running a program, you might want to know what the value of a certain variable is at a given point in the program. One way of finding this out is by printing the value of the variable.
+जब आप एक प्रोग्राम(program) को चला रहे होते हैं, तो आप यह जानना चाहते होंगे कि प्रोग्राम में दिए गए एक निश्चित वेरिएबल(variable) का मूल्य क्या है। इसका पता लगाने का एक तरीका वेरिएबल के मूल्य को प्रिंट करके है।
 
-Look at this program which divides `x` by `y` via subtraction:
+इस कार्यक्रम को देखें जो घटाव के माध्यम से `x` को विभाजित करता है `y`से:
 
 ```python
 x = 25
@@ -18,24 +18,24 @@ while x >= y:
 print(count)
 ```
 
-If you wanted to check the value of `x` at any point inside the loop, you could add a `print` statement to display its value.
+लूप के अंदर किसी भी समय अगर आपको `x` का मूल्य जानना है, तो आप उसका मूल्य प्रदर्शित करने के लिए `print` विवरण जोड़ सकते हैं।
 
-The drawbacks of this method are:
-- You will have to remember to remove the `print` statement when you're confident your program works.
-- The output of your `print` statement gets muddled up with the actual output you want.
+इस विधि की कमियां हैं:
+- जब आप विश्वासपात्र हैं की आपका प्रोग्राम काम करता है, तो आपको <`print` विवरण को हटाना याद रखना होगा।
+- आपके `print` विवरण का आउटपुट(output) वास्तविक आउटपुट के साथ गड़बड़ होजाता है।
 
-Instead, you could use IDLE's built-in debug tools to step through the program line by line, and see the value of each variable at any point.
+इसके बजाय, आप IDLE के अंतर्निहित डिबग टूल(debug tool) का उपयोग कर सकते हैं जो प्रोग्राम को प्रत्येक पंक्ति से गुजरते हुए और किसी भी समय हर एक वेरिएबल का मूल्य देख सकते हैं।
 
-+ In an IDLE shell window, open the debugger:
++ IDLE शेल विंडो(shell window) में, डिबगर(debugger) खोलें:
 
 ![Open debugger](images/open-debugger.png)
 
 ![Debugger](images/debugger.png)
 
-+ Using IDLE, create a new file and paste in the code from above.
++ IDLE का उपयोग करके, एक नयी फ़ाइल बनाएँ और ऊपर वाले कोड को पेस्ट(paste) करें।
 
-+ Run the code by pressing <kbd>F5</kbd>. The debugger will take over, and you can now press **Step** to step through the program one line at a time. You will see the current line in the box at the top, and the value of any variables at this point in the program in the information box at the bottom.
++ <kbd>F5</kbd> दबाकर कोड को (रन) Run करें। डिबगर संभाल लेगा, और अब आप **Step** दबाकर एक बार में एक पंक्ति करते हुए प्रोग्राम से गुजर सकते हैं। आपको सबसे ऊपर स्थित बॉक्स(box) में वर्तमान पंक्ति दिखेगी, और सबसे नीचे सूचना बॉक्स में प्रोग्राम के किसी भी वैरिएबल का मूल्य दिखाई देगा।
 
-Here is the first run of the loop:
+यहाँ लूप(loop) का पहला Run(रन) है:
 
 ![Step through program](images/step-through-program.gif)
