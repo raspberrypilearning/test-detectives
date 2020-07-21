@@ -1,19 +1,19 @@
-## Introduction
+## परिचय
 
-Learn how to test your code and detect bugs by becoming a test detective.
+अपने कोड(code) की जाँच करना सीखें और परीक्षण जासूस बनकर बग(bug) का पता लगाएं।
 
-### What you will make
+### आप क्या बनाएँगे
 
-You will develop a set of techniques and tests that you can use to prove your code works and to debug problems when they happen.
+आप ऐसी तकनीकों और परीक्षणों का एक समूह बनाएंगे, जिनका उपयोग आप अपने कोड को सिद्ध करने और समस्याओं के निराकरण के लिए कर सकते हैं।
 
-### What you will learn
+### आप क्या सीखेंगे
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
+यह प्रोजेक्ट [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"} के निम्नलिखित तत्वों को सम्मिलित करता है:
 
 + [Apply higher-order programming techniques to solve real-world problems](https://curriculum.raspberrypi.org/programming/maker/){:target="_blank"}
 
-### Additional information for educators
+### शिक्षकों के लिए अतिरिक्त जानकारी
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/test-detectives/print){:target="_blank"}.
+अगर आपको यह प्रोजेक्ट(Project) प्रिंट(print) करने की आवश्यकता है, तो कृप्या [printer-friendly version](https://projects.raspberrypi.org/en/projects/test-detectives/print){:target="_blank"} का उपयोग करें।
 
-Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
+इस प्रोजेक्ट(project) के लिए GitHub रिपॉज़िटरी(repository) का उपयोग करने के लिए फुटर(footer) में दिए लिंक का उपयोग करें, जिसमें 'en/resources' फोल्डर(folder) में सभी संसाधन (समाप्त प्रोजेक्ट के उदाहरण सहित) हैं।
