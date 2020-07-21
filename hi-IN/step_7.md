@@ -1,6 +1,6 @@
-## Logging
+## लॉगिंग
 
-Let's look at another piece of the `Card` class code: the setter method for the suit property.
+आइए सूट प्रॉपर्टी के लिए `Card` क्लास(class)‌ कोड(code): सेटर मेथड के एक और हिस्से को देखें।
 
 ```python
 @suit.setter
@@ -11,62 +11,62 @@ def suit(self, suit):
            print("That's not a suit!")
 ```
 
-If the user tries to set a suit which is not in the list, at the moment the code prints out `"That's not a suit"`. If we use this class in a real card game program, it would be helpful to be notified when something unexpected is being assigned as a suit. However, we wouldn't necessarily want the player to be notified as well.
+यदि उपयोगकर्ता एक सूट सेट करने की कोशिश करता है जो सूची में नहीं है, तो फिलहाल के लिए कोड `"That's not a suit"` प्रिंट करेगा। अगर हम इस क्लास को एक सचमुच के कार्ड गेम में उपयोग करते हैं, तो जब किसी सूट को कुछ अनेपेक्षित सोंपा जा रहा है तो वह सूचित करने में मददगार होगा। हालाँकि, हम जरूरी रूप से नहीं चाहेंगे कि खिलाड़ी को भी सूचित किया जाए।
 
-Instead of using the `print` function to report the error, we could log it instead.
+दोष रिपोर्ट करने के लिए `print` फंकशन को इस्तेमाल करने की बजाय हम उसे लॉग कर सकते हैं।
 
-+ Open the `card.py` file you wrote or downloaded, which contains the code for the `Card` class.
++ `card.py` फ़ाइल खोलें जो आपने लिखी या डाउन्लोड की थी, जिसमें `Card` क्लास का कोड है।
 
-+ At the top of the file, add a line of code to import the `logging` module. This is a standard Python module, so you won't need to install anything extra.
++ `logging` मॉड्यूल को आयात करने के लिए फ़ाइल के शीर्ष पर एक कोड की पंक्ति जोड़ें। यह एक मानक Python(पाइथन) मॉड्यूल(module) है, इसलिए आपको कुछ भी अतिरिक्त इंस्टॉल(install) करने की जरूरत नहीं होगी।
 
 ```python
 import logging
 ```
 
-+ Below that, set up your logger. The first line creates the logger, and `__name__` will log which file the problem occurred in. The second line sets how much information you want to see: `DEBUG` is the most detailed level of information. We will discuss these level settings further in the next step.
++ उसके नीचे, अपना लोगर सेट करें। पहली पंक्ति लोगर बनाती है, और जिस फ़ाइल में समस्या हुई है उसे `__name__` लॉग करती है। दूसरी पंक्ति यह निर्धारित करती है कि आप कितनी जानकारी देखना चाहते हैं: `DEBUG` सूचना का सबसे विस्तृत स्तर है। हम अगले चरण में इन सेटिंग्स(settings) के स्तर पर अगले कदम में चर्चा करेंगे।
 
 ```Python
 logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.DEBUG)
 ```
 
-+ Replace the `print` statement with a statement which logs debug information:
++ `print` विवरण को उस विवरण से बदलें जो डीबग(debug) जानकारी को लॉग करता है।
 
 ```python
 logger.debug("Invalid suit - " + str(suit) )
 ```
 
-Next, let's test what this looks like when you run the program and set an invalid suit.
+आगे, आइये जाँच करें की जब आप प्रोग्राम Run करते हैं और एक अमान्य सूट सेट करते हैं तो कैसा दिखता है।
 
-+ Create a new file and save it as `log_test.py` in the same folder as your `card.py` code.
++ एक नई फ़ाइल बनाएं और `log_test.py` के रूप में सहेजें उसी फ़ोल्डर में जहां आपका `card.py` कोड है।
 
-+ In the `log_test` file, add some code to import the `Card` class and the `logging` module:
++ `log_test` फ़ाइल में, `Card` क्लास और `logging` मॉड्यूल आयात करने के लिए कुछ कोड जोड़ें:
 
 ```Python
 from card import Card
 import logging
 ```
 
-+ Add a line of code to specify the lowest level of message you would like to see. In this case, we would like to see debug messages.
++ आप संदेश के कौनसे निम्नतम स्तर को देखना चाहते हैं यह निर्दिष्ट करने के लिए कोड की एक पंक्ति जोड़ें। इस मामले में, हम डिबग संदेश देखना चाहेंगे।
 
 ```python
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-+ Now create a card and try to set an invalid suit:
++ अब एक कार्ड तयार करें और एक अमान्य सूट सेट करने का प्रयास करें:
 
 ```python
 my_card = Card("hearts", "6")
 my_card.suit = "blobs"
 ```
 
-+ Run the code and you will see a debug message:
++ कोड Run(रन) करें और आपको एक डीबग संदेश दिखाई देगा:
 
 ![Bad suit](images/bad-suit.png)
 
-Note that the information provided also tells you the file where the logged issue occurred: `card`, i.e. `card.py`.
+ध्यान दें कि प्रदान की गई जानकारी आपको उस फ़ाइल के बारे में भी बताती है जहाँ लॉग की गयी समस्या है: `card`, मतलब `card.py`।
 
-+ You can improve your logging message by adding more detailed information, for example:
++ अधिक विस्तृत जानकारी जोड़कर आप अपने लॉगिंग(logging) संदेशों में सुधार कर सकते हैं, उदाहरण के लिए:
 
 ```python
 logger.debug("Tried to set an invalid suit (" + str(suit) + ") for " + repr(self) )
