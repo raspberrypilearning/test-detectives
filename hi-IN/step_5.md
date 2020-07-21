@@ -1,18 +1,18 @@
-## When to assert
+## दावे के साथ कब कहना है
 
-Now that you know how to use `assert`, it's important to also know **when** to use it.
+अब जब आपको पता है `assert` का उपयोग कैसे करना है, यह जानना भी ज़रूरी है की **when** उपयोग करना है।
 
-It is not a good idea to use `assert` to test user inputs. For example, the following use of `assert` doesn't make sense, because you cannot possibly state with certainty what the user will type in:
+उपयोगकर्ता के इनपुट की जाँच करने के लिए `assert` का उपयोग करना अच्छा विचार नहीं है। उदाहरण के लिए, निम्न `assert` के उपयोग से कोई मतलब नहीं है, क्योंकि आप निश्चित रूप से यह बता नहीं सकते हैं कि उपयोगकर्ता क्या टाइप करेंगे:
 
 ```python
 name = input("Please enter your name: ")
 assert name == "Laura"
 ```
 
-Here are some good ways to use `assert` to test your program:
+यहाँ कुछ अच्छे तरीक़े हैं `assert` का उपयोग करके आपके प्रोग्राम की जाँच करने के लिए।
 
-- `item in list` — assert that a particular item is in a list
-- `type(var) is IntType` — assert that a particular variable is an integer
-- Checking "can't happen" situations — e.g. assert that there are no duplicates in a list
-- After calling a function — assert that the return value of a function is reasonable
-- `isinstance(class)` — assert that an object is an instance of a particular class
+- `item in list` — यह दावे के साथ कहा जा सकता हैं की एक विशिष्ट आइटम एक सूची में है
+- `type(var) is IntType` — यह दावे के साथ कहा जा सकता है की एक विशेष वेरिएबल (variable) एक पूर्णांक (integer) है
+- "can't happen"("नहीं हो सकता") परिस्थितियों की जांच करना — उदहरणार्थ यह दावे के साथ कहा जा सकता हैं की सूची में कोई डुप्लिकेट नहीं हैं
+- एक फंक्शन को बुलाने के बाद — यह दावे के साथ कहा जा सकता है की फंक्शन का वापसी मूल्य उचित है
+- `isinstance(class)` — यह दावे के साथ कहा जा सकता है की एक ऑब्जेक्ट एक विशेष क्लास का एक इन्सटन्स (instance) है
