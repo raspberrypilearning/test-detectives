@@ -1,4 +1,4 @@
-## चुनौती: लॉग जासूस
+## चुनौती: लॉग(log) जासूस
 
 + [`deck.py`](resources/deck.py) फ़ाइल(file) डाउन्लोड(download) करें और इसे अपने उसी फ़ोल्डर(folder) में जोड़ें जहां `card.py` और `log_test.py` फाइलें हैं।
 
