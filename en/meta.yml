@@ -1,7 +1,8 @@
+---
 title: Test detectives
 hero_image: images/banner.png
 description: Learn how to test your code and detect bugs
-theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+theme: red
 duration: 2
 listed: true
 ingredient: false
@@ -14,15 +15,17 @@ hardware: ''
 software: python
 version: 4
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: Introduction
 - title: What you will need
+  completion: engaged
 - title: Detective skills
 - title: Assert
 - title: When to assert
-- title: "Challenge: bug detective"
+- title: 'Challenge: bug detective'
 - title: Logging
 - title: To log or not to log
-- title: "Challenge: log detective"
+- title: 'Challenge: log detective'
 - title: Stepping
-- title: "Challenge: step detective"
+  completion: internal
+- title: 'Challenge: step detective'
