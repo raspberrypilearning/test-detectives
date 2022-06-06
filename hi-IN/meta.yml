@@ -18,14 +18,16 @@ last_tested: 2017-01-01
 steps:
 - title: परिचय
 - title: आपको किन चीज़ों की आवश्यकता होगी
-  completion: engaged
 - title: जासूसी कौशल
 - title: दावे के साथ कहना
+  completion:
+  - engaged
 - title: दावे के साथ कब कहना है
 - title: 'चुनौती: बग(bug) जासूस'
 - title: लॉगिंग(logging)
 - title: लॉग(log) करना है या नहीं करना है
 - title: 'चुनौती: लॉग(log) जासूस'
 - title: स्टेपिंग(stepping)
-  completion: internal
+  completion:
+  - internal
 - title: 'चुनौती: स्टेप(step) जासूस'
